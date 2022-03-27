@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ARGuide Home</name>
+	<gx:CascadingStyle kml:id="__managed_style_072AB4677420ECD5D5CE">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1D447EF6BA20ECD5D5CD">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2f2fd3</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_067C52652520ECD5D5CD">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1D447EF6BA20ECD5D5CD</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_072AB4677420ECD5D5CE</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_21202BAA1120ECD48E0C">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_160D2D22E520ECD48E0C">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_003D9CA75520ECD48E0C">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_160D2D22E520ECD48E0C</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_21202BAA1120ECD48E0C</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0D318DC30120ECD48E0B">
+		<name>Stadium</name>
+		<LookAt>
+			<longitude>4.395165018508374</longitude>
+			<latitude>50.84390788528151</latitude>
+			<altitude>84.55601184291875</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>509.0435422075825</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_003D9CA75520ECD48E0C</styleUrl>
+		<LineString>
+			<coordinates>
+				4.397136015278309,50.84555165205126,91.87336047983612 4.395251925281592,50.8449372662791,84.02706191081343 4.394915522318006,50.84482383052066,84.53217328870497 4.39461847510294,50.84418350100321,83.64244601409074 4.395732431413435,50.84396726915321,83.93814790342653 4.396025904929843,50.8432441925241,82.28840170193935 4.394288311750523,50.84358558109174,82.75227840752811 4.393840098886159,50.84281252416346,81.72420539615392 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="05B01FC36320ECD5C155">
+		<name>Colruyt</name>
+		<LookAt>
+			<longitude>4.397544431049171</longitude>
+			<latitude>50.84675721669191</latitude>
+			<altitude>86.90315412798563</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>332.1204432930972</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_067C52652520ECD5D5CD</styleUrl>
+		<LineString>
+			<coordinates>
+				4.397708346322567,50.84582553855222,91.58226799030426 4.39705308074211,50.8465060224838,88.41590358162051 4.395899664972436,50.84737443772679,85.29743250188413 4.397163516998949,50.8476757768483,85.1918980465155 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
