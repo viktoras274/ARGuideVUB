@@ -29,7 +29,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: Continue walking straight till the next sign
   - Location:
@@ -38,7 +38,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: 'Turn slightly left '
   - Location:
@@ -47,7 +47,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: Turn left
   - Location:
@@ -56,7 +56,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: Turn slighlty right
   - Location:
@@ -65,7 +65,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: Turn right
   - Location:
@@ -74,7 +74,7 @@ MonoBehaviour:
       Altitude: 0
       AltitudeMode: 0
       Label: 
-    IsStep: 0
+    IsStep: 1
     Name: 
     Instruction: Turn left
   - Location:
