@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AR Location Data 1
   m_EditorClassIdentifier: 
   Location:
-    Latitude: 50.822172421684286
-    Longitude: 4.3943455628486845
+    Latitude: 40.46305232774023
+    Longitude: 22.975204410666493
     Altitude: 0
     AltitudeMode: 0
     Label: 
