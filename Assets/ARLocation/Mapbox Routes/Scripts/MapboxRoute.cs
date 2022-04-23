@@ -58,8 +58,11 @@ namespace ARLocation.MapboxRoutes
             public RouteSettings RouteSettings;
 
             [Header("Other settings")]
+            //[Tooltip("If true, load the route as soon as the component's \"Start\" method is called.")]
+            //public bool LoadRouteAtStartup = true;
+
             [Tooltip("If true, load the route as soon as the component's \"Start\" method is called.")]
-            public bool LoadRouteAtStartup = true;
+            public bool LoadRouteAtStartup = LoadRouteAtStartupControl(1);
 
             [Tooltip("The assumed height of the device from the ground.")]
             public float GroundHeight = 1.4f;
@@ -70,6 +73,8 @@ namespace ARLocation.MapboxRoutes
 
             public bool DebugMode;
         }
+
+
 
         // ================================================================================ //
         //  Public Properties                                                               //
@@ -148,6 +153,7 @@ namespace ARLocation.MapboxRoutes
         void Start()
         {
             if (Settings.LoadRouteAtStartup)
+            //if(LoadRouteAtStartupControl(1))
             {
                 ARLocationProvider.Instance.OnEnabled.AddListener(onLocationEnabled);
             }
@@ -227,6 +233,7 @@ namespace ARLocation.MapboxRoutes
         private void onLocationEnabled(Location location)
         {
             if (Settings.LoadRouteAtStartup)
+            //if(LoadRouteAtStartupControl(1))
             {
                 if (Settings.RouteSettings.RouteType == RouteType.CustomRoute)
                 {
@@ -581,5 +588,25 @@ namespace ARLocation.MapboxRoutes
         {
             yield return LoadRoute(Settings.RouteSettings.From, Settings.RouteSettings.To);
         }
+
+
+        // Controls whether the route will load at the start of the application or not.
+        public static bool LoadRouteAtStartupControl(int val)
+        {
+            bool loadRoute = false;
+
+            if(val == 0)
+            {
+                loadRoute = false;
+            }
+
+            if(val == 1)
+            {
+                loadRoute = true;
+            }
+
+            return loadRoute;
+        }
+
     }
 }

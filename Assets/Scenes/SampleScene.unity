@@ -123,6 +123,113 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &13264975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13264979}
+  - component: {fileID: 13264978}
+  - component: {fileID: 13264977}
+  - component: {fileID: 13264976}
+  m_Layer: 0
+  m_Name: Mapbox Route GtoK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &13264976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13264975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &13264977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13264975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: 125422eb012d116449cc795af3cce901, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &13264978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13264975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs: []
+    PathRenderer: {fileID: 13264977}
+    OnScreenIndicator: {fileID: 13264976}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 1
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 4.396787595342744, 50.82413035941261
+      CustomRoute: {fileID: 11400000, guid: 18e16f0012aa5794a801f3ffe0ba9c8b, type: 2}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!4 &13264979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13264975}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40919614
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &40919615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,120 +331,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40919614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &62867610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 62867614}
-  - component: {fileID: 62867613}
-  - component: {fileID: 62867612}
-  - component: {fileID: 62867611}
-  m_Layer: 0
-  m_Name: Mapbox Route
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &62867611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62867610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
-  NeutralArrowDirection: 1
-  Margin: 20
---- !u!114 &62867612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62867610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Settings:
-    LineMaterial: {fileID: 2100000, guid: 5a66f28d8726243dba9094b33505fec6, type: 2}
-    TextureOffsetFactor: -4
---- !u!114 &62867613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62867610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Settings:
-    SignpostPrefabs:
-    - {fileID: 2406714923471210871, guid: 154e5264001534d7999c9720b114562d, type: 3}
-    PathRenderer: {fileID: 62867612}
-    OnScreenIndicator: {fileID: 62867611}
-    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
-    RouteSettings:
-      RouteType: 0
-      From:
-        Type: 0
-        Location:
-          Latitude: 0
-          Longitude: 0
-          Altitude: 0
-          AltitudeMode: 0
-          Label: 
-        Query: 
-      To:
-        Type: 2
-        Location:
-          Latitude: 0
-          Longitude: 0
-          Altitude: 0
-          AltitudeMode: 0
-          Label: 
-        Query: 4.39778600411842, 50.8457565219705
-      CustomRoute: {fileID: 0}
-    LoadRouteAtStartup: 1
-    GroundHeight: 1.4
-    OnMapboxRouteLoadError:
-      m_PersistentCalls:
-        m_Calls: []
-    DebugMode: 0
---- !u!4 &62867614
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62867610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &63068014
 GameObject:
@@ -637,7 +636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &191183299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,12 +719,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191183298}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &204085203
 GameObject:
@@ -818,13 +817,14 @@ GameObject:
   - component: {fileID: 223974229}
   - component: {fileID: 223974228}
   - component: {fileID: 223974227}
+  - component: {fileID: 223974231}
   m_Layer: 0
   m_Name: Mapbox Route Colruyt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &223974227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,13 +907,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223974226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &223974231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223974226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0aadb6b1ad64fba9d3df3e2d3d875f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 0}
 --- !u!1 &259715463
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1082,7 @@ RectTransform:
   m_GameObject: {fileID: 302988618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 1710119734}
   - {fileID: 1207409701}
@@ -1078,7 +1092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 820, y: -12}
+  m_AnchoredPosition: {x: 803, y: 35}
   m_SizeDelta: {x: 140, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302988620
@@ -1400,6 +1414,221 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320237788}
   m_CullTransparentMesh: 1
+--- !u!1 &320397869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320397870}
+  - component: {fileID: 320397873}
+  - component: {fileID: 320397872}
+  - component: {fileID: 320397871}
+  m_Layer: 0
+  m_Name: TrilofosRoute2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &320397870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320397869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320397871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320397869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &320397872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320397869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: -876546973899608171, guid: fa933da1b729f4a4d8c84b71c308219b, type: 3}
+    TextureOffsetFactor: -4
+--- !u!114 &320397873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320397869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs: []
+    PathRenderer: {fileID: 320397872}
+    OnScreenIndicator: {fileID: 320397871}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 1
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 22.976362330049483, 40.46469462058059
+      CustomRoute: {fileID: 11400000, guid: d1c98889229f6624aa976a2e23bdf5a0, type: 2}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!1 &388961418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388961422}
+  - component: {fileID: 388961421}
+  - component: {fileID: 388961420}
+  - component: {fileID: 388961419}
+  m_Layer: 0
+  m_Name: Mapbox Route Building K
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &388961419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388961418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &388961420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388961418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: 125422eb012d116449cc795af3cce901, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &388961421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388961418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs:
+    - {fileID: 2406714923471210871, guid: 154e5264001534d7999c9720b114562d, type: 3}
+    PathRenderer: {fileID: 388961420}
+    OnScreenIndicator: {fileID: 388961419}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 1
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 4.396787595342744, 50.82413035941261
+      CustomRoute: {fileID: 11400000, guid: 28c2f7281358cc741b62288c3804b437, type: 2}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!4 &388961422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388961418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390335881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 612461559}
+  m_Camera: {fileID: 0}
 --- !u!4 &421707252
 Transform:
   m_ObjectHideFlags: 0
@@ -1657,7 +1886,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 612461563}
+  - {fileID: 905229850}
   - {fileID: 1432864677}
   - {fileID: 1061875910}
   m_Father: {fileID: 0}
@@ -1923,7 +2152,7 @@ RectTransform:
   - {fileID: 1127862121}
   - {fileID: 844922888}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1966,7 +2195,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -115}
+  m_AnchoredPosition: {x: 2, y: -146}
   m_SizeDelta: {x: 550, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553732678
@@ -2099,7 +2328,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553732676}
   m_CullTransparentMesh: 1
---- !u!1 &612461558
+--- !u!1 &611841369
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2107,117 +2336,314 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 612461563}
-  - component: {fileID: 612461559}
-  - component: {fileID: 612461562}
-  - component: {fileID: 612461561}
-  - component: {fileID: 612461560}
+  - component: {fileID: 611841370}
+  - component: {fileID: 611841372}
+  - component: {fileID: 611841371}
   m_Layer: 0
-  m_Name: AR Camera
-  m_TagString: MainCamera
+  m_Name: GPS Stage Object (DtoG)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!20 &612461559
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612461558}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.1
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!114 &612461560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612461558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UseCustomMaterial: 0
-  m_CustomMaterial: {fileID: 0}
---- !u!114 &612461561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612461558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FocusMode: -1
-  m_LightEstimationMode: -1
-  m_AutoFocus: 1
-  m_LightEstimation: 0
-  m_FacingDirection: 1
---- !u!114 &612461562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612461558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &612461563
+--- !u!4 &611841370
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 612461558}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 611841369}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1294.1044, y: -749.57117, z: 189.48636}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 421707252}
-  m_RootOrder: 0
+  m_Father: {fileID: 1155905992}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &611841371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611841369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c56c9eb6d14e4854b316f59e1296fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locations:
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8215791854038
+        Longitude: 4.39452678006541
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8216703348813
+        Longitude: 4.39465428681234
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8215685866155
+        Longitude: 4.39525826613885
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8215049938373
+        Longitude: 4.39571796151441
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8215325507184
+        Longitude: 4.39592264339757
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8216152212648
+        Longitude: 4.3962850309924
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8217508854339
+        Longitude: 4.39667090667368
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8219289440576
+        Longitude: 4.39685545591226
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.8220667270504
+        Longitude: 4.39697625177675
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 0
+    ShowObjectAfterThisManyUpdates: 1
+  Prefab: {fileID: 1317352403415316, guid: 35ce2bb4caba9434db5e656796b632b1, type: 3}
+  DebugMode: 0
+--- !u!114 &611841372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611841369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocationOptions:
+    LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 0
+        Longitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 2
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  DebugMode: 0
+  ObjectLocationUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectPositionUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &631861252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631861256}
+  - component: {fileID: 631861255}
+  - component: {fileID: 631861254}
+  - component: {fileID: 631861253}
+  m_Layer: 0
+  m_Name: Mapbox Route Cafeteria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &631861253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631861252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &631861254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631861252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: 451437bfb46507345bf55a23d1c4bc10, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &631861255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631861252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs:
+    - {fileID: 2406714923471210871, guid: 154e5264001534d7999c9720b114562d, type: 3}
+    PathRenderer: {fileID: 631861254}
+    OnScreenIndicator: {fileID: 631861253}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 0
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 4.395848905610023, 50.821622802095106
+      CustomRoute: {fileID: 0}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!4 &631861256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631861252}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633987594
 GameObject:
@@ -2619,7 +3045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 32}
+  m_AnchoredPosition: {x: 0, y: 90}
   m_SizeDelta: {x: 1192.4, y: 182.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &721751235
@@ -2739,6 +3165,619 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771188768}
   m_CullTransparentMesh: 1
+--- !u!1 &781592528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781592529}
+  - component: {fileID: 781592531}
+  - component: {fileID: 781592530}
+  m_Layer: 0
+  m_Name: GPS Stage Object (K to D)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &781592529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781592528}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1294.1044, y: -749.57117, z: 189.48636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1155905992}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781592530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781592528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c56c9eb6d14e4854b316f59e1296fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locations:
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82409687104541
+        Longitude: 4.3968073707922315
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82413637872179
+        Longitude: 4.3969090007791465
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82395365543829
+        Longitude: 4.397151349211271
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.823924024568015
+        Longitude: 4.397362426877578
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82370179244245
+        Longitude: 4.3975265983961265
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82352894450244
+        Longitude: 4.397229526124818
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82343511249553
+        Longitude: 4.396940271544963
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82333140321603
+        Longitude: 4.396643199273711
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82297088821363
+        Longitude: 4.396658834656563
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82289187085473
+        Longitude: 4.396580657743016
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82228034039716
+        Longitude: 4.396587432994721
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82217790592935
+        Longitude: 4.3963960568230505
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82212043630844
+        Longitude: 4.396065451786626
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82204614620551
+        Longitude: 4.395941197545511
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82201951387566
+        Longitude: 4.395586185426168
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82195598507255
+        Longitude: 4.3954057624204665
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.821896896884255
+        Longitude: 4.395290644231551
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82183553599475
+        Longitude: 4.395227688971403
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82173326766559
+        Longitude: 4.395171928599126
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82165046021095
+        Longitude: 4.395139085497362
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82162062596731
+        Longitude: 4.3946118858144985
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82158286296308
+        Longitude: 4.394613753828281
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  Prefab: {fileID: 6230735039383488986, guid: f9e365456859e4690951774033c4127a, type: 3}
+  DebugMode: 0
+--- !u!114 &781592531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781592528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocationOptions:
+    LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 0
+        Longitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  DebugMode: 0
+  ObjectLocationUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectPositionUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &781721880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781721881}
+  - component: {fileID: 781721883}
+  - component: {fileID: 781721882}
+  m_Layer: 0
+  m_Name: GPS Stage Object (GtoK)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &781721881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781721880}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1294.1044, y: -749.57117, z: 189.48636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1155905992}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781721882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781721880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c56c9eb6d14e4854b316f59e1296fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locations:
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82210829006854
+        Longitude: 4.397021515277999
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.822174591669125
+        Longitude: 4.396939664037433
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.822305214307676
+        Longitude: 4.396615557582123
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.822591971960065
+        Longitude: 4.396594259025676
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.822902945010185
+        Longitude: 4.3965967124393615
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82333240089767
+        Longitude: 4.396660521001394
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.823370744475994
+        Longitude: 4.396858095497237
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.823663841962116
+        Longitude: 4.397499537790395
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82377668919375
+        Longitude: 4.397506499440368
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.823929789375825
+        Longitude: 4.397319155890187
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 50.82411028283224
+        Longitude: 4.396829494705344
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 0
+    ShowObjectAfterThisManyUpdates: 1
+  Prefab: {fileID: 1000012276909320, guid: be188b8431533497f81342f748507523, type: 3}
+  DebugMode: 0
+--- !u!114 &781721883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781721880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocationOptions:
+    LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 0
+        Longitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 2
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  DebugMode: 0
+  ObjectLocationUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectPositionUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &844922887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,8 +3814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2, y: -17}
-  m_SizeDelta: {x: -243.7578, y: -761.6718}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: 384.9158, y: -549.725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844922889
 MonoBehaviour:
@@ -2816,50 +3855,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844922887}
   m_CullTransparentMesh: 1
---- !u!1 &852289947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 852289949}
-  - component: {fileID: 852289948}
-  m_Layer: 0
-  m_Name: RouteController_Colruyt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &852289948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852289947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6719dd00e988914ea9b8e64cbf5a1d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeRoute: {fileID: 223974226}
---- !u!4 &852289949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852289947}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1249.5228, y: 666.37866, z: -34.023132}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854905462
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +3930,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854905462}
   m_CullTransparentMesh: 1
+--- !u!1 &857189831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857189835}
+  - component: {fileID: 857189834}
+  - component: {fileID: 857189833}
+  - component: {fileID: 857189832}
+  m_Layer: 0
+  m_Name: TrilofosRouteHome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &857189832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857189831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &857189833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857189831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: 4052583f8c58c0e4c852742d5b8f0649, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &857189834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857189831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs: []
+    PathRenderer: {fileID: 857189833}
+    OnScreenIndicator: {fileID: 857189832}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 1
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      CustomRoute: {fileID: 11400000, guid: 22b31eed7433a3e46a886f7587f805a6, type: 2}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!4 &857189835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857189831}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899440365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,6 +4127,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899440365}
   m_CullTransparentMesh: 1
+--- !u!1 &905229849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905229850}
+  - component: {fileID: 905229853}
+  - component: {fileID: 905229854}
+  - component: {fileID: 905229852}
+  - component: {fileID: 905229851}
+  m_Layer: 0
+  m_Name: ARCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &905229850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905229849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 421707252}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &905229851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905229849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UseCustomMaterial: 0
+  m_CustomMaterial: {fileID: 0}
+--- !u!114 &905229852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905229849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
+  m_AutoFocus: 1
+  m_LightEstimation: 0
+  m_FacingDirection: 1
+--- !u!20 &905229853
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905229849}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &905229854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905229849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &907384817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,7 +4551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1032321682
 MonoBehaviour:
@@ -3392,8 +4614,8 @@ MonoBehaviour:
   LocationProviderSettings:
     TimeBetweenUpdates: 2
     MinDistanceBetweenUpdates: 0
-    AccuracyRadius: 25
-    MaxNumberOfUpdates: 0
+    AccuracyRadius: 15
+    MaxNumberOfUpdates: 2
   MockLocationData: {fileID: 11400000, guid: c07f8a841978c1c4aab0fbf2548d41f9, type: 2}
   MaxWaitTime: 200
   StartUpDelay: 0
@@ -3422,7 +4644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8509790efa844279ea4b7b19529fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 0}
+  Camera: {fileID: 905229853}
   WaitForARTrackingToStart: 1
   RestartWhenARTrackingIsRestored: 0
   SetTargetFrameRateTo60Mhz: 1
@@ -3448,7 +4670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e5e11077e489453a9cbcfff72c5a9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxNumberOfUpdates: 4
+  MaxNumberOfUpdates: 2
   AverageCount: 150
   UseRawUntilFirstAverage: 1
   MovementSmoothingFactor: 0.015
@@ -3647,7 +4869,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 823, y: -143}
+  m_AnchoredPosition: {x: 806, y: -68.00002}
   m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114040582
@@ -3672,7 +4894,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 62
+    m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3767,6 +4989,224 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127862120}
   m_CullTransparentMesh: 1
+--- !u!1 &1155905991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155905992}
+  m_Layer: 0
+  m_Name: MapBox Routes With Pins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155905992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155905991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1294.1044, y: 749.57117, z: -189.48636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 781592529}
+  - {fileID: 1166887383}
+  - {fileID: 2032715308}
+  - {fileID: 611841370}
+  - {fileID: 781721881}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1166887382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166887383}
+  - component: {fileID: 1166887385}
+  - component: {fileID: 1166887384}
+  m_Layer: 0
+  m_Name: GPS Stage Object (Trilofos)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1166887383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166887382}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1294.1044, y: -749.57117, z: 189.48636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1155905992}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1166887384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166887382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c56c9eb6d14e4854b316f59e1296fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locations:
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.46306792024194
+        Longitude: 22.97519726946436
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.463173022309775
+        Longitude: 22.975435879148733
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.463227660048744
+        Longitude: 22.97559689838471
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.4633086283381
+        Longitude: 22.975851909822012
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.46337737492286
+        Longitude: 22.97592620449217
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.463553060318134
+        Longitude: 22.976044674372588
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.46365999902946
+        Longitude: 22.97610692125926
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  Prefab: {fileID: 6230735039383488986, guid: f9e365456859e4690951774033c4127a, type: 3}
+  DebugMode: 0
+--- !u!114 &1166887385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166887382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocationOptions:
+    LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 0
+        Longitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 2
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  DebugMode: 0
+  ObjectLocationUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectPositionUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1207409700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4067,7 +5507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1432864677 stripped
 Transform:
@@ -4132,158 +5572,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1506713970
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1506713972}
-  - component: {fileID: 1506713971}
-  m_Layer: 0
-  m_Name: RouteController_BuildingD
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1506713971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506713970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6719dd00e988914ea9b8e64cbf5a1d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeRoute: {fileID: 40919614}
---- !u!4 &1506713972
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506713970}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1249.5228, y: 666.37866, z: -34.023132}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1526490724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1526490728}
-  - component: {fileID: 1526490727}
-  - component: {fileID: 1526490726}
-  - component: {fileID: 1526490725}
-  m_Layer: 0
-  m_Name: Mapbox Route
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1526490725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526490724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
-  NeutralArrowDirection: 1
-  Margin: 20
---- !u!114 &1526490726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526490724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Settings:
-    LineMaterial: {fileID: 2100000, guid: 697c3d00ed75e4c388f1112e6817fa65, type: 2}
-    TextureOffsetFactor: -4
---- !u!114 &1526490727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526490724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Settings:
-    SignpostPrefabs:
-    - {fileID: 2406714923471210871, guid: 154e5264001534d7999c9720b114562d, type: 3}
-    PathRenderer: {fileID: 1526490726}
-    OnScreenIndicator: {fileID: 1526490725}
-    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
-    RouteSettings:
-      RouteType: 0
-      From:
-        Type: 0
-        Location:
-          Latitude: 0
-          Longitude: 0
-          Altitude: 0
-          AltitudeMode: 0
-          Label: 
-        Query: 
-      To:
-        Type: 2
-        Location:
-          Latitude: 0
-          Longitude: 0
-          Altitude: 0
-          AltitudeMode: 0
-          Label: 
-        Query: 4.395239906616297,50.844917624621075
-      CustomRoute: {fileID: 0}
-    LoadRouteAtStartup: 1
-    GroundHeight: 1.4
-    OnMapboxRouteLoadError:
-      m_PersistentCalls:
-        m_Calls: []
-    DebugMode: 0
---- !u!4 &1526490728
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526490724}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562069058
 GameObject:
@@ -4450,6 +5738,114 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577749883}
   m_CullTransparentMesh: 1
+--- !u!1 &1588547746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588547750}
+  - component: {fileID: 1588547749}
+  - component: {fileID: 1588547748}
+  - component: {fileID: 1588547747}
+  m_Layer: 0
+  m_Name: Mapbox Route Building E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1588547747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588547746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &1588547748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588547746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: d41b75062395a4febac96f3ca13f1256, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &1588547749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588547746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs:
+    - {fileID: 2406714923471210871, guid: 154e5264001534d7999c9720b114562d, type: 3}
+    PathRenderer: {fileID: 1588547748}
+    OnScreenIndicator: {fileID: 1588547747}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 0
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 4.395707430344487, 50.82147283341024
+      CustomRoute: {fileID: 0}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
+--- !u!4 &1588547750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588547746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597267906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,7 +6130,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710119733}
   m_CullTransparentMesh: 1
---- !u!1 &1750727897
+--- !u!1 &1722129123
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4742,42 +6138,105 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1750727899}
-  - component: {fileID: 1750727898}
+  - component: {fileID: 1722129124}
+  - component: {fileID: 1722129127}
+  - component: {fileID: 1722129126}
+  - component: {fileID: 1722129125}
   m_Layer: 0
-  m_Name: RouteController_Parc
+  m_Name: Mapbox Route DtoG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1750727898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750727897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6719dd00e988914ea9b8e64cbf5a1d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeRoute: {fileID: 191183298}
---- !u!4 &1750727899
+  m_IsActive: 1
+--- !u!4 &1722129124
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750727897}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1249.5228, y: 666.37866, z: -34.023132}
+  m_GameObject: {fileID: 1722129123}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0032920018, y: -28.391352, z: 0.00330019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1963760328}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1722129125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722129123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c04fa4e0641a427587f656c768c3002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowSprite: {fileID: 21300000, guid: 19a300465515241c2bb5670f7b18e69b, type: 3}
+  NeutralArrowDirection: 1
+  Margin: 20
+--- !u!114 &1722129126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722129123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d4565e2fba5454e885ee85e49be2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    LineMaterial: {fileID: 2100000, guid: 4052583f8c58c0e4c852742d5b8f0649, type: 2}
+    TextureOffsetFactor: -4
+--- !u!114 &1722129127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722129123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fdb132362f4081b8e8bc85022fa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Settings:
+    SignpostPrefabs: []
+    PathRenderer: {fileID: 1722129126}
+    OnScreenIndicator: {fileID: 1722129125}
+    MapboxToken: pk.eyJ1IjoidmlrdHN0YXYiLCJhIjoiY2wxMjZ0aDNwMDBqOTNsbWIzankxbm5yNSJ9.yguFUdFyQX5b-n1IKZhrPQ
+    RouteSettings:
+      RouteType: 1
+      From:
+        Type: 0
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 
+      To:
+        Type: 2
+        Location:
+          Latitude: 0
+          Longitude: 0
+          Altitude: 0
+          AltitudeMode: 0
+          Label: 
+        Query: 4.396787595342744, 50.82413035941261
+      CustomRoute: {fileID: 11400000, guid: 28c2f7281358cc741b62288c3804b437, type: 2}
+    LoadRouteAtStartup: 1
+    GroundHeight: 1.4
+    OnMapboxRouteLoadError:
+      m_PersistentCalls:
+        m_Calls: []
+    DebugMode: 0
 --- !u!1 &1793089056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4846,6 +6305,11 @@ MonoBehaviour:
   routeParc: {fileID: 191183298}
   routeColruyt: {fileID: 223974226}
   routeBuildingD: {fileID: 40919614}
+  routeBuildingE: {fileID: 1588547746}
+  routeCafeteria: {fileID: 631861252}
+  routeBuildingK: {fileID: 388961418}
+  routeDtoG: {fileID: 1722129123}
+  routeGtoK: {fileID: 13264975}
 --- !u!4 &1882260592
 Transform:
   m_ObjectHideFlags: 0
@@ -4858,7 +6322,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1911938634
 PrefabInstance:
@@ -4921,6 +6385,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00a30469732339a4695a4b58d5f153ba, type: 3}
+--- !u!1 &1963760327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963760328}
+  m_Layer: 0
+  m_Name: MAPBOX ROUTES
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963760328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963760327}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0032920018, y: 28.391352, z: -0.00330019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 191183302}
+  - {fileID: 223974230}
+  - {fileID: 40919618}
+  - {fileID: 1588547750}
+  - {fileID: 388961422}
+  - {fileID: 631861256}
+  - {fileID: 1722129124}
+  - {fileID: 13264979}
+  - {fileID: 857189835}
+  - {fileID: 320397870}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975119648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5170,7 +6674,7 @@ RectTransform:
   - {fileID: 1597267907}
   - {fileID: 2001532132}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5398,7 +6902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2022920288
 GameObject:
@@ -5475,6 +6979,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022920288}
   m_CullTransparentMesh: 1
+--- !u!1 &2032715307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032715308}
+  - component: {fileID: 2032715310}
+  - component: {fileID: 2032715309}
+  m_Layer: 0
+  m_Name: GPS Stage Object (Trilofos) (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2032715308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032715307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1294.1044, y: -749.57117, z: 189.48636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1155905992}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032715309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032715307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c56c9eb6d14e4854b316f59e1296fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locations:
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.462283241720286
+        Longitude: 22.97515835859383
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.46307348504186
+        Longitude: 22.975016970173073
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.46366098975852
+        Longitude: 22.974946275961884
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  - LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 40.464372608308366
+        Longitude: 22.97469068920057
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 4
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 0
+    ShowObjectAfterThisManyUpdates: 1
+  Prefab: {fileID: 1295758952425276, guid: 22150daba6e8b47b69fd30f00b9c56cd, type: 3}
+  DebugMode: 0
+--- !u!114 &2032715310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032715307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed08d66cc34e4c49bf4ebb7b1ac269a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocationOptions:
+    LocationInput:
+      LocationInputType: 0
+      LocationData: {fileID: 0}
+      Location:
+        Latitude: 0
+        Longitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+        Label: 
+      OverrideAltitudeData:
+        OverrideAltitude: 0
+        Altitude: 0
+        AltitudeMode: 0
+  PlacementOptions:
+    MovementSmoothing: 0.05
+    MaxNumberOfLocationUpdates: 2
+    UseMovingAverage: 0
+    HideObjectUntilItIsPlaced: 1
+    ShowObjectAfterThisManyUpdates: 1
+  DebugMode: 0
+  ObjectLocationUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectPositionUpdated:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2069779835
 GameObject:
   m_ObjectHideFlags: 0
@@ -5517,5 +7165,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 public class DropdownOptions : MonoBehaviour
 {
-    List<string> names = new List<string>() { " ", "Parc", "Colruyt", "Building D" };
+    /*    List<string> names = new List<string>() { " ", "Parc", "Colruyt", "Building D", "Building E", "Cafeteria", "Building K", "Trilofos", "Trilofos 2" };
+    */
+
+    List<string> names = new List<string>() { " ", "D to G", "G to K"};
 
     public Dropdown dropdown;
 
